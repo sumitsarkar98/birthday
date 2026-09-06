@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sonai🎂</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== COUNTDOWN OVERLAY ========== -->
+    <div id="countdownOverlay" class="countdown-overlay">
+        <div class="countdown-particles" id="countdownParticles"></div>
+        <div class="countdown-number" id="countdownNumber">10</div>
+        <div class="countdown-ring">
+            <svg viewBox="0 0 120 120">
+                <circle class="ring-bg" cx="60" cy="60" r="54"></circle>
+                <circle class="ring-progress" cx="60" cy="60" r="54" id="ringProgress"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <!-- ========== SPECIAL DAY REVEAL ========== -->
+    <div id="specialReveal" class="special-reveal">
+        <div class="reveal-sparkles" id="revealSparkles"></div>
+        <div class="reveal-content">
+            <p class="reveal-subtitle">✨ Wait for it... ✨</p>
+            <h1 class="reveal-title">Today is a<span>Special Day</span></h1>
+            <div class="reveal-date">
+                <span class="date-day">7</span>
+                <span class="date-month">September</span>
+            </div>
+            <p class="reveal-subtext">Someone amazing was born on this day 🎂</p>
+            <button id="exploreBtn" class="explore-btn">
+                <span>Explore</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- ========== MAIN BIRTHDAY PAGE ========== -->
+    <div id="mainPage" class="main-page">
+
+        <div class="balloons">
+            <span class="balloon balloon-1">🎈</span>
+            <span class="balloon balloon-2">🎈</span>
+            <span class="balloon balloon-3">🎈</span>
+            <span class="balloon balloon-4">🎈</span>
+            <span class="balloon balloon-5">🎈</span>
+            <span class="balloon balloon-6">🎈</span>
+            <span class="balloon balloon-7">🎈</span>
+        </div>
+
+        <main class="birthday-container">
+            <div class="content">
+
+                <p class="small-text">Today is a special day ✨</p>
+
+                <h1>
+                    Happy
+                    <span>Birthday!</span>
+                    <span class="name-text">Snehatrika Das💖</span>
+                </h1>
+
+                <!-- <p class="message">
+                    Wishing you a day filled with happiness, laughter,
+                    love and countless beautiful memories. You deserve
+                    all the wonderful things life has to offer.
+                </p> -->
+
+                <div class="cake-wrapper">
+                    <div class="candle">
+                        <div class="candle-stripe"></div>
+                        <div class="wick"></div>
+                        <div class="flame"></div>
+                        <div class="smoke">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="cake">
+                        <div class="icing"></div>
+                        <div class="cake-layer top-layer"></div>
+                        <div class="cake-layer middle-layer"></div>
+                        <div class="cake-layer bottom-layer"></div>
+                        <div class="cake-decoration">
+                            <span>●</span>
+                            <span>●</span>
+                            <span>●</span>
+                            <span>●</span>
+                        </div>
+                    </div>
+                    <div class="plate"></div>
+                </div>
+
+                <button id="wishButton" class="wish-button">
+                    🎁 Make a Wish
+                </button>
+
+                <p id="wishMessage" class="wish-message">
+                    You're my forever favorite. Love you always. 💕
+                </p>
+
+            </div>
+        </main>
+
+        <div id="confetti-container"></div>
+
+        <!-- Love Letter (hidden until wish button click) -->
+        <div class="love-letter" id="loveLetter">
+            <div class="letter-icon" id="letterIcon">💌</div>
+        </div>
+
+        <div class="letter-overlay" id="letterOverlay">
+            <div class="letter-card" id="letterCard">
+                <div class="letter-flap"></div>
+                <div class="letter-body">
+                    <div class="letter-content">
+                        <p class="letter-greeting">My Dearest Sonai,</p>
+                        <p class="letter-text">
+                            On this special day, I just want you to know how much you mean to me.
+                            Every moment with you is a treasure I hold close to my heart.
+                            Your smile lights up my world, and your laughter is my favorite melody.
+                        </p>
+                        <p class="letter-text">
+                            You make every single day feel like a celebration.
+                            I am so grateful to have you in my life, and I promise to cherish
+                            you always. Here's to making countless more beautiful memories together. 💕
+                        </p>
+                        <p class="letter-sign">Your's Babai 💖</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
